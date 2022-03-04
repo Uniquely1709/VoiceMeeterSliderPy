@@ -5,3 +5,5 @@ python/dist
 arduino/.pio
 python/voicemeeter/__pycache__
 arduino/.vscode
+build/
+dist/
