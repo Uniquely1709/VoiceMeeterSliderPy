@@ -48,6 +48,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           upload_url: ${{steps.create_release.outputs.upload_url}}
-          asset_path: dist/voicemeeterController.exe
+          asset_path: dist/main/main.exe
           asset_name: VoicemeeterController.exe
           asset_content_type: application/zip
