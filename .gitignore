@@ -1,0 +1,7 @@
+voicemeetersliderpycode-workspace.code-workspace
+python/__pycache__
+python/build
+python/dist
+arduino/.pio
+python/voicemeeter/__pycache__
+arduino/.vscode
