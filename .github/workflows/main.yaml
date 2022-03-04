@@ -15,14 +15,14 @@ jobs:
       - name: Install Python
         uses: actions/setup-python@v1
         with:
-          python-version: "3.9.10"
+          python-version: "3.9"
           architecture: "x64"
       - name: Install requirements
         run: |
           pip install -r python/requirements.txt
       - name: Run PyInstaller
         run: |
-          python -m PyInstaller -F --onefile python/main.spec
+          python -m PyInstaller -F --onefile --add-binary "python/python39.dll" python/main.spec
       - uses: actions/upload-artifact@v2
         with:
           name: Windows voicemeeterController
