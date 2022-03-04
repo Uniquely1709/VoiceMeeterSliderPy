@@ -20,7 +20,7 @@ jobs:
       - name: Install requirements
         run: |
           pip install -r python/requirements.txt
-      - name: Run PyInstaller
+      - name: Run  PyInstaller
         run: |
           python -m PyInstaller -F --add-binary python/python39.dll python/main.spec
       - uses: actions/upload-artifact@v2
